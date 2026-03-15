@@ -145,3 +145,7 @@ button{
     align-self:end;
     border:none;
 }
+
+#RotateCal:hover{
+    background-color:rgba(6, 6, 6, 0.833);
+}
