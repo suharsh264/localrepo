@@ -2,28 +2,44 @@
 <html>
     <head>
         <title>Calculator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="main_container">
+        
         <p id="inputNumber"></p>
-        <button onclick="buttonOne()">1</button>
-        <button onclick="buttonTwo()">2</button>
-        <button onclick ="buttonThree()">3</button>
-        <button onclick ="buttonFour()">4</button>
-        <button onclick ="buttonFive()">5</button>
-        <button onclick ="buttonSix()">6</button>
-        <button onclick ="buttonSeven()">7</button>
-        <button onclick ="buttonEight()">8</button>
-        <button onclick ="buttonNine()">9</button>
-        <button onclick = "buttonPlus()" class="signs">+</button>
-        <button onclick ="buttonZero()">0</button>
-        <button onclick = "buttonMinus()" class="signs">-</button>
-        <button onclick = "buttonMultipe()" class="signs">*</button>
-        <button onclick = "buttonDivide()" class="signs">/</button>
-        <button onclick ="buttonPercent()" class="signs">%</button>
-        <button onclick ="buttonClear() " class="lastButtons">Clear</button>                                                                 
-        <button onclick="buttonSum()" class="lastButtons">=</button>
+         <p id="inputCalculation"></p>
+        <div id="innerContainer">
+            <div id="buttonsDiv">
+                <button onclick="buttonOne() " class="numbers">1</button>
+                <button onclick="buttonTwo() " class="numbers">2</button>
+                <button onclick ="buttonThree() " class="numbers">3</button>
+                <button onclick ="buttonFour() " class="numbers">4</button>
+                <button onclick ="buttonFive() " class="numbers">5</button>
+                <button onclick ="buttonSix() " class="numbers">6</button>
+                <button onclick ="buttonSeven() " class="numbers">7</button>
+                <button onclick ="buttonEight() " class="numbers">8</button>
+                <button onclick ="buttonNine() " class="numbers">9</button>
+                <button onclick ="buttonZero() " class="numbers">0</button>
+                <button onclick ="eraseOne()" class="lastButtons" id="erase">~</button> 
+                <button onclick ="buttonClear() " class="lastButtons">C</button>
+            </div>
+            <div id="signsDiv">
+                <button onclick = "buttonPlus()" class="signs" id="plus">+</button>
+                <button onclick = "buttonMinus()" class="signs" id="minus">-</button>
+                <button onclick = "buttonMultipe()" class="signs" id="multiple">*</button>
+                <button onclick = "buttonDivide()" class="signs" id="divide">/</button>
+                <button onclick ="buttonPercent()" class="signs" id="percent">%</button>
+            </div>
+            <div id="equalSignDiv">
+                <button onclick="buttonSum()" class="lastButtons" id="equalTo">=</button>
+            </div>
+        </div>
         </div>
         <script src="javascriptFile.js">
             

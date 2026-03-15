@@ -1,9 +1,17 @@
 let calculation = "";
 let result = " ";
+let newString;
 
 let inputValue = document.querySelector('#inputNumber');
 
-console.log(inputValue)
+let plusSign = document.querySelector('#plus').innerHTML = "<img src='/practice-github/localrepo/images/addsign.svg' alt='plus'>";
+let minusSign = document.querySelector('#minus').innerHTML = "<img src='/practice-github/localrepo/images/minussign.svg' alt='minus'>";
+let MultipleSign = document.querySelector('#multiple').innerHTML = "<img src='/practice-github/localrepo/images/crosssign.svg' alt='multiple'>";
+let divideSign = document.querySelector('#divide').innerHTML = "<img src='/practice-github/localrepo/images/dividesign.svg' alt='divide'>";
+let percentSign = document.querySelector('#percent').innerHTML = "<img src='/practice-github/localrepo/images/percentsign.svg' alt='percent'>";
+let equalToSign = document.querySelector('#equalTo').innerHTML = "<img src='/practice-github/localrepo/images/equalsign.svg' alt='equalTo'>";
+let eraseSign = document.querySelector('#erase').innerHTML = "<img src='/practice-github/localrepo/images/erasesign.svg' alt='erase'>";
+
 // console.log(inputAttribute);
 
 function buttonOne(){
@@ -114,15 +122,22 @@ function buttonPercent(){
 
 function buttonClear(){
   calculation = '';
-  console.log(calculation);
   result = ''
   inputValue.innerText = calculation;
 }
 
+
 function buttonSum(){
-   let finalResult = eval(result);
-    console.log(result);
+   let finalResult = eval(inputValue.innerText);
+    console.log(inputValue.innerText);
     console.log(finalResult);
     inputValue.innerText = finalResult;
 }
 
+function eraseOne(){
+ let eraseOneText = inputValue.innerText;
+ newString = eraseOneText.slice(0,-1);
+ inputValue.innerText = newString;
+ }
+
+ 
