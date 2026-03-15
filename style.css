@@ -125,3 +125,23 @@ button{
     border-radius:25px;
     font-size:30px;
 }
+
+#inputCalculation{
+  width:100%;
+  height:5%;
+  color:grey;
+
+}
+
+#turnCalculator{
+    width:fit-content;
+  height:560px; 
+  display:flex;
+}
+#RotateCal{
+    background-color:grey;
+    margin-left:10px;
+    flex-direction:column;
+    align-self:end;
+    border:none;
+}

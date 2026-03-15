@@ -11,6 +11,7 @@ let divideSign = document.querySelector('#divide').innerHTML = "<img src='/pract
 let percentSign = document.querySelector('#percent').innerHTML = "<img src='/practice-github/localrepo/images/percentsign.svg' alt='percent'>";
 let equalToSign = document.querySelector('#equalTo').innerHTML = "<img src='/practice-github/localrepo/images/equalsign.svg' alt='equalTo'>";
 let eraseSign = document.querySelector('#erase').innerHTML = "<img src='/practice-github/localrepo/images/erasesign.svg' alt='erase'>";
+let RotateCal = document.querySelector('#RotateCal').innerHTML = "<img src='/practice-github/localrepo/images/mobilerotate.svg' alt='mobileRotate'>";
 
 // console.log(inputAttribute);
 
