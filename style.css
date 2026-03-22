@@ -1,3 +1,151 @@
-p{
-    color:green;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#inputNumber{
+    width:100%;
+    height:87px;
+    padding:0px 13px;
+    color:white;
+    border-radius:6px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    white-space:pre;
+    font-size:60px; 
+    font-weight:lighter;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+#main_container{
+  width:300px;
+  height:560px;  
+  padding:20px 10px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+  flex-direction:row;
+  background-color:black;
+  border-radius:16px;
+  box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.589);
+  font-family: "Noto Sans Math", sans-serif;
+  font-size:larger;
+  box-sizing:border-box;
+}
+
+button{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid white;
+    font-family: "Noto Sans Math", sans-serif;
+    font-size:25px;
+    cursor:pointer;
+}
+
+.lastButtons{
+    
+    border-radius:50%;
+    background-color:grey;
+    color:white;
+    border:none;
+}
+
+.lastButtons:hover{
+  background-color:rgba(128, 128, 128, 0.589);
+}
+.signs{
+    background-color:#FF8040;
+    color:white;
+    border:none;
+}
+
+.signs:hover{
+    background-color:#ff804065;
+}
+.numbers{
+    background-color:rgba(128, 128, 128, 0.381);
+    color:white;
+    border:none;
+}
+
+.numbers:hover{
+   background-color:rgba(128, 128, 128, 0.753);
+}
+
+#innerContainer{
+    width:380px;
+    height:80%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    
+}
+
+#buttonsDiv{
+   width:70%;
+   height:80%;
+   display:flex;
+   justify-content:space-between;
+   flex-wrap:wrap;
+   row-gap:28px;
+}
+
+#signsDiv{
+    width:20%;
+    height:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+#equalSignDiv{
+    width:95%;
+    height:10%;
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+}
+
+#equalTo{
+    width:100%;
+    border-radius:25px;
+    font-size:30px;
+}
+
+#inputCalculation{
+  width:100%;
+  height:5%;
+  color:grey;
+
+}
+
+#turnCalculator{
+    width:fit-content;
+  height:560px; 
+  display:flex;
+}
+#RotateCal{
+    background-color:grey;
+    margin-left:10px;
+    flex-direction:column;
+    align-self:end;
+    border:none;
+}
+
+#RotateCal:hover{
+    background-color:rgba(6, 6, 6, 0.833);
 }

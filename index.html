@@ -1,0 +1,60 @@
+<html>
+  <head></head>
+  <body>
+    <p> Cart Quantity </p>
+    <button onclick="
+    
+     console.log(`Cart Quantity: ${variable}`);
+  ">Show Quantity</button>
+    <button onclick="
+      variable += 1;
+      console.log(`Cart Quantity: ${variable}`);
+    ">Add to Cart</button>
+    <button onclick="
+      variable += 2;
+      console.log(`Cart Quantity: ${variable}`);
+    ">+2</button>
+    <button onclick ="
+      variable += 3;
+      console.log(`Cart Quantity: ${variable}`);
+    ">+3</button>
+    <button onclick ="
+      variable += 4;
+      console.log(`Cart Quantity: ${variable}`);
+    ">+4</button>
+    <button onclick ="
+      variable += 5;
+      console.log(`Cart Quantity: ${variable}`);
+    ">+5</button>
+    <button onclick ="
+      variable -= 2;
+      console.log(`Cart Quantity: ${variable}`);
+    ">-2</button>
+    <button onclick ="
+      variable -= 3;
+      console.log(`Cart Quantity: ${variable}`);
+    ">-3</button>
+    <button onclick ="
+      --variable;
+      console.log('One was decreased from Cart');
+      console.log(`Cart Quantity: ${variable}`);
+    ">Remove from cart</button>
+    <button onclick ="
+      variable = 0;
+      console.log('Cart was reset');
+      console.log(`Cart Quantity: ${variable}`);
+    ">Reset Cart</button>
+    <script>
+     let variable = 0;
+     let coffeeCost = 5;
+     let bagelsCost = 3;
+     let soupCost = 9
+     let orderedItems = coffeeCost + (2*bagelsCost) + soupCost;
+     let TotalCost = orderedItems;
+     console.log(`Total cost: ${TotalCost}`);
+     console.log('Total cost:' + TotalCost);
+     console.log(`Cost of tax (${5+5}%): ${TotalCost*0.1}`);
+     console.log(`Total cost after tax: ${TotalCost + (TotalCost*0.1)}`);
+    </script>
+  </body>
+</html>
